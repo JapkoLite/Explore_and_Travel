@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* inter-regular - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/inter-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-500 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/inter-v2-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v2-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* inter-600 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/inter-v2-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/inter-v2-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* playfair-display-700 - latin */
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/playfair-display-v21-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/playfair-display-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* mulish-300 - latin */
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/mulish-v1-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v1-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* mulish-700 - latin */
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/mulish-v1-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v1-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+      box-sizing: border-box;
+  }
+  *, *::before, *::after{
+      box-sizing: inherit;
+  }
+    body{
+       width: 1600px;
+       height: 100vh;
+       justify-content: center;
+       font-family: 'Inter';
+       font-style: normal;
+       font-size: 16px;
+        line-height: 1.2;
+        font-weight: normal;
+        
+    }
+  .wrapper{
+      max-width: 1415px; 
+      height: 786px;
+      margin-left: 80px;
+     margin-top: 43px;
+      margin: 0 auto;
+      background: url(../Image/swg/element3.svg )no-repeat top;
+      background-position-x: 530px;
+      background-position-y: 220px;
+     
+  }
+  header{
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: url(../Image/swg/element2.svg)  no-repeat left;
+      background-position-x: 90px;
+      background-position-y: 510px;
+    
+  }
+  .header_wrapper{
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-content: space-between;
+padding-top: 60px;
+  }
+  .header_logo-pic  {
+    
+    margin-left: 111px;
+  }
+  .header_list{
+    margin-right: 85px;
+    display: flex;
+    align-items: center; 
+    
+    
+  }
+  .header_item{
+      margin-right: 34px;
+  }
+  .header_item01{
+      margin-right: 34px;
+  }
+  .header_item02{
+    margin-right: 34px;
+  }
+  .header_item03{
+    margin-right: 34px;
+  }
+ .header_link{
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD; 
+    text-decoration: none; 
+     
+ }
+ .header_link01{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #202336;  
+    text-decoration: none;   
+ }
+ .header_link02{
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none; 
+    width: 132px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    
+ }
+ .header_link03{
+    color: #FFFFFF;
+    
+    background-color: #FB8F1D;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none; 
+    width: 132px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+ }
+ .header_link:hover, .header_link:focus, .header_link:active{
+     opacity: 75%;
+ }
+ .header_link01:hover, .header_link01:focus, .header_link01:active{
+    opacity: 75%;
+}
+.header_link02:hover, .header_link02:focus, .header_link02:active{
+    opacity: 75%;
+}
+.header_link03:hover, .header_link03:focus, .header_link03:active{
+    opacity: 75%;
+}
+
+/* Intro sryles start */
+.intro{
+  padding-top: 100px;
+  padding-left: 109px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+
+}
+.intro_title{
+    width: 356px;
+  font-weight: 700;
+  font-size: 64px;
+line-height: 80px;
+color: #202336;
+margin-bottom: 74px;
+}
+.intro_subtitle{
+  width: 149px;
+height: 27px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #202336;
+}
+.intro_rectandle hr{
+border-radius: 20px;
+width: 32px;
+height: 2px;
+font-style: normal;
+margin-left: 0;
+margin-top: 21px;
+background: #202336;
+
+}
+.main{
+  display: flex;
+}
+.header_image-pic{
+margin-top: 58px;
+margin-left: 190px;
+display: flex;
+position: relative;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  color: #4A4C53;
+  background: url(../Image/swg/Vector.svg) no-repeat right ;
+  
+}
+
+
+.location{
+  position: absolute;
+  width: 220px;
+  height: 52px;
+  margin-top: 48px;
+  border: 0.8px solid #AFB0B9;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.activity{
+  margin-top: 48px;
+  margin-left: 250px;
+  position: absolute;
+  width: 220px;
+  height: 52px;    
+  border: 0.8px solid #AFB0B9;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.grade{
+  margin-top: 48px;
+  margin-top: 138px;
+  position: absolute;
+  width: 220px;
+  height: 52px;
+  
+  border: 0.8px solid #AFB0B9;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.date{
+  margin-left: 250px;
+  margin-top: 138px;
+  position: absolute;
+  width: 220px;
+  height: 52px;
+ 
+  border: 0.8px solid #AFB0B9;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+/* Intro sryles end */
+.header_link04{
+  color: #FFFFFF;
+  background-color: #FB8F1D;
+  margin-top: -50px ;
+  margin-left: 200px;
+  justify-content: center;
+  border-radius: 8px;
+  text-decoration: none; 
+  width: 180px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.header_link04:hover, .header_link04:focus, .header_link04:active{
+  opacity: 75%;
+}
+.icon1{
+text-align: center;
+}

@@ -1,0 +1,44 @@
+.footer{
+    width: 1600px;
+    height: 195px;
+    background: #F8F8F8;
+    
+}
+.logo{
+    display: flex;
+}
+.header_logo-pic1{
+    margin-left: 191px;
+    margin-top: 31px;
+    
+}
+.textfooter{
+    position: absolute;
+    width: 391px;
+    height: 28px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;   
+    color: #848484;
+    margin-left: 1110px;
+    margin-top: 39px;
+
+}
+
+.line hr{
+    margin-top: 26px;
+    color:  #C4C4C4;
+    width: 1219px;
+    height: 0.6px; 
+}
+.items_soc{
+   
+    display: flex;
+    justify-content: center;
+   
+   
+}
+.soc{
+   margin: 10px;
+   margin-top: 32px;
+}
